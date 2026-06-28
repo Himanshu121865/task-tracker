@@ -1,7 +1,5 @@
 # Task Tracker
 
-MERN stack task tracker with a Google Keep-inspired UI. Built for COLL-EDGE CONNECT internship assignment.
-
 ## Features
 
 - **CRUD** — Create, view, update, delete tasks
@@ -11,10 +9,7 @@ MERN stack task tracker with a Google Keep-inspired UI. Built for COLL-EDGE CONN
 - **Pin** — Pin important tasks to the top
 - **Search** — Real-time search across titles and descriptions
 - **Grid layout** — Responsive grid, pinned section separate from others
-- **Dark mode** — Always-on dark theme
-- **Expandable form** — "Take a note..." bar expands with color picker & priority
 - **Detail modal** — Click any card to open and edit inline
-- **Toast notifications** — Feedback on all actions
 - **Validation** — Both client and server side
 
 ## Tech Stack
