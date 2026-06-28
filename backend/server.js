@@ -1,22 +1,11 @@
-import express from 'express';
-import mongoose from 'mongoose';
-import cors from 'cors';
 import dotenv from 'dotenv';
-import taskRoutes from './routes/tasks.js';
-
 dotenv.config();
 
-const app = express();
+import mongoose from 'mongoose';
+import createApp from './app.js';
+
 const PORT = process.env.PORT || 5000;
-
-app.use(cors());
-app.use(express.json());
-
-app.use('/api/tasks', taskRoutes);
-
-app.get('/', (req, res) => {
-  res.json({ message: 'Task Tracker API is running' });
-});
+const app = createApp();
 
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {
